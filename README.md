@@ -4,6 +4,17 @@ Nova versão do portal https://www.acreditaemprega.mjd.gov.mz, do programa **Acr
 
 Reúne todos os conteúdos do site actual, com a mesma estrutura de menu e a identidade visual do programa (logótipo, cores, fotografia, mapa e cartazes oficiais), e acrescenta funcionalidades novas.
 
+## Ver o site em linha (GitHub Pages)
+
+O repositório é público e já está preparado (ficheiro `.nojekyll`). Para obter o link público:
+
+1. Abrir https://github.com/ajmano-creator/Acredita/settings/pages
+2. Em **Build and deployment**, escolher **Source: Deploy from a branch**.
+3. Em **Branch**, escolher `claude/acreditaemprega-website-melhorado-drmq58` e a pasta `/ (root)`. Carregar em **Save**.
+4. Ao fim de um ou dois minutos, o site fica disponível em **https://ajmano-creator.github.io/Acredita/**
+
+Cada novo envio para este ramo actualiza o site automaticamente.
+
 ## Estrutura
 
 ```
@@ -38,6 +49,19 @@ Site estático, sem dependências externas. Funciona em qualquer servidor web (A
 | Reclamações | Igual |
 | Contactos | Igual, mais redes sociais |
 | Texto sobre o EMPREGA (17% assalariados, 21% desemprego jovem urbano) | Integrado em «O que é o Acredita Emprega» |
+
+## Secção «Próximos passos»
+
+Orientações para quatro situações, em separadores acessíveis por teclado: jovem seleccionado, mulher em formação (preparação para a subvenção), jovem não seleccionado e quem ainda não se candidatou. Fecha com o aviso «Próxima edição: data a anunciar» e ligação ao Informa-te. Quando houver datas da próxima edição ou do concurso da subvenção, actualizar esta secção e o calendário.
+
+## Próximos passos do projecto
+
+1. Activar o GitHub Pages (ver acima) para circular o link interno de revisão.
+2. Revisão do conteúdo pelo MJD e pelo INJ, sobretudo números, datas e texto das orientações.
+3. Ligar os formulários ao serviço do Ministério e definir quem recebe e responde às mensagens do Expressa-te.
+4. Integrar a lista de apurados (pesquisa por código ou por distrito) com os dados oficiais.
+5. Instalar no servidor `acreditaemprega.mjd.gov.mz`, com HTTPS, e redireccionar o endereço com «www», que hoje devolve erro 503.
+6. Registar o site no Google Search Console e acompanhar as visitas.
 
 ## Antes de publicar
 
