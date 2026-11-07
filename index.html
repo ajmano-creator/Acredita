@@ -45,6 +45,7 @@
               <li><a href="#programa">O Programa</a></li>
               <li><a href="#requisitos">Critérios</a></li>
               <li><a href="#como-funciona">Como funciona</a></li>
+              <li><a href="#proximos-passos">Próximos passos</a></li>
               <li><a href="#faq">Perguntas</a></li>
               <li><a href="#reclamacoes">Reclamações</a></li>
             </ul>
@@ -85,6 +86,28 @@
         </div>
       </div>
     </section>
+
+    <!-- Acesso rápido -->
+    <nav class="quick" aria-label="Acesso rápido">
+      <div class="container quick__grid">
+        <a class="quick__item" href="#apurados">
+          <span class="quick__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19 3h-4.2A3 3 0 0 0 12 1a3 3 0 0 0-2.8 2H5a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm-7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2Zm-2 14-4-4 1.4-1.4 2.6 2.6 6.6-6.6L18 9l-8 8Z"/></svg></span>
+          <span><strong>Lista de apurados</strong><small>Resultados por distrito</small></span>
+        </a>
+        <a class="quick__item" href="#proximos-passos">
+          <span class="quick__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4 10.6 5.4 16.2 11H4v2h12.2l-5.6 5.6L12 20l8-8-8-8Z"/></svg></span>
+          <span><strong>Próximos passos</strong><small>O que fazer agora</small></span>
+        </a>
+        <a class="quick__item" href="#requisitos">
+          <span class="quick__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg></span>
+          <span><strong>Requisitos</strong><small>Verifique se é elegível</small></span>
+        </a>
+        <a class="quick__item" href="#reclamacoes">
+          <span class="quick__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6a1 1 0 0 0-1 .2l-2.2 2.2a15 15 0 0 1-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1A11 11 0 0 1 8.5 4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1 17 17 0 0 0 17 17 1 1 0 0 0 1-1v-3.5a1 1 0 0 0-1-1Z"/></svg></span>
+          <span><strong>Linha 116</strong><small>Reclamações gratuitas</small></span>
+        </a>
+      </div>
+    </nav>
 
     <!-- Nível de candidaturas -->
     <section class="stats" aria-labelledby="stats-title">
@@ -303,6 +326,69 @@
           <li class="done"><time datetime="2026-09">Set</time><span>Cerimónia em Nicoadala, Zambézia, com a assinatura dos termos pelos beneficiários.</span></li>
           <li><time>A anunciar</time><span>Concurso da subvenção de 100 000 MT.</span></li>
         </ol>
+      </div>
+    </section>
+
+    <!-- Próximos passos -->
+    <section class="section" id="proximos-passos" aria-labelledby="pp-title">
+      <div class="container">
+        <p class="eyebrow">Próximos passos</p>
+        <h2 id="pp-title">E agora, o que devo fazer?</h2>
+        <p class="lead lead--narrow">As candidaturas de 2026 estão fechadas, mas o programa continua. Escolha a sua situação para saber o que vem a seguir.</p>
+
+        <div class="pp-tabs" role="tablist" aria-label="A sua situação">
+          <button role="tab" id="pp-t1" aria-controls="pp-p1" aria-selected="true">Fui seleccionado</button>
+          <button role="tab" id="pp-t2" aria-controls="pp-p2" aria-selected="false" tabindex="-1">Sou mulher em formação</button>
+          <button role="tab" id="pp-t3" aria-controls="pp-p3" aria-selected="false" tabindex="-1">Não fui seleccionado</button>
+          <button role="tab" id="pp-t4" aria-controls="pp-p4" aria-selected="false" tabindex="-1">Ainda não me candidatei</button>
+        </div>
+
+        <div class="pp-panel" role="tabpanel" id="pp-p1" aria-labelledby="pp-t1">
+          <ol class="pp-list">
+            <li><strong>Confirme o seu nome na lista de apurados</strong> do seu distrito e guarde o código de candidatura.</li>
+            <li><strong>Assine o termo de beneficiário</strong> quando for chamado para o efeito.</li>
+            <li><strong>Frequente a formação até ao fim.</strong> Durante os módulos recebe o subsídio de apoio ao consumo e, se viver longe, o subsídio de transporte.</li>
+            <li><strong>Aproveite a mentoria</strong> para pensar desde já no negócio que quer montar com o que aprendeu.</li>
+            <li><strong>Mantenha o telefone activo.</strong> O programa comunica com os candidatos por SMS.</li>
+          </ol>
+        </div>
+
+        <div class="pp-panel" role="tabpanel" id="pp-p2" aria-labelledby="pp-t2" hidden>
+          <ol class="pp-list">
+            <li><strong>Conclua os módulos com avaliação positiva.</strong> É a condição para concorrer à subvenção de 100 000 MT.</li>
+            <li><strong>Comece a preparar o seu plano de negócio:</strong> o que vai produzir ou vender, a quem, onde e quanto precisa para começar.</li>
+            <li><strong>Peça apoio ao seu mentor</strong> para rever as contas e o plano.</li>
+            <li><strong>Esteja atenta ao anúncio do concurso.</strong> Os critérios e o calendário serão publicados neste portal e por SMS a quem subscrever o Informa-te.</li>
+          </ol>
+          <p class="pp-note">A subvenção é um concurso separado: ter sido seleccionada para a bolsa não garante a subvenção.</p>
+        </div>
+
+        <div class="pp-panel" role="tabpanel" id="pp-p3" aria-labelledby="pp-t3" hidden>
+          <ol class="pp-list">
+            <li><strong>Pode voltar a candidatar-se.</strong> Quem concorreu e não foi seleccionado é elegível na próxima edição.</li>
+            <li><strong>Guarde a declaração do bairro</strong> ou outro comprovativo de residência actualizado.</li>
+            <li><strong>Subscreva o <a href="#interacao">Informa-te</a></strong> para receber o aviso de abertura por SMS ou e-mail.</li>
+            <li><strong>Se acha que houve erro</strong> na avaliação da sua candidatura, use o <a href="#expressa-te">Expressa-te</a> ou fale com o ponto focal do distrito.</li>
+          </ol>
+        </div>
+
+        <div class="pp-panel" role="tabpanel" id="pp-p4" aria-labelledby="pp-t4" hidden>
+          <ol class="pp-list">
+            <li><strong>Confirme se o seu distrito está abrangido</strong> na secção <a href="#distritos">Distritos</a>.</li>
+            <li><strong>Use o <a href="#requisitos">verificador de requisitos</a></strong> para saber se cumpre os critérios.</li>
+            <li><strong>Prepare o comprovativo de residência:</strong> declaração do bairro ou outro documento que prove que vive no distrito.</li>
+            <li><strong>Subscreva o <a href="#interacao">Informa-te</a></strong>. A data da próxima edição será anunciada aqui.</li>
+          </ol>
+        </div>
+
+        <div class="next-edition">
+          <div>
+            <span class="badge badge--soon">Próxima edição</span>
+            <h3>Data a anunciar</h3>
+            <p>Seja o primeiro a saber quando abrem as candidaturas.</p>
+          </div>
+          <a class="btn btn--primary" href="#interacao">Quero ser avisado</a>
+        </div>
       </div>
     </section>
 
@@ -594,6 +680,10 @@
       <a href="#inicio">Voltar ao topo</a>
     </div>
   </footer>
+
+  <a href="#inicio" class="to-top" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4 4 12l1.4 1.4L11 7.8V20h2V7.8l5.6 5.6L20 12l-8-8Z"/></svg>
+  </a>
 
   <dialog class="lightbox" id="lightbox" aria-label="Cartaz ampliado">
     <button type="button" class="lightbox__close" aria-label="Fechar">×</button>
