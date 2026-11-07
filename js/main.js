@@ -188,16 +188,15 @@
   }
 
   var sub = $("#subscribeForm");
-  var canal = $("#s-canal");
+  function canalVal() { var c = sub.querySelector("[name=canal]:checked"); return c ? c.value : "sms"; }
   function syncCanal() {
-    $$("[data-show]", sub).forEach(function (el) { el.hidden = el.dataset.show !== canal.value; });
+    $$("[data-show]", sub).forEach(function (el) { el.hidden = el.dataset.show !== canalVal(); });
   }
-  canal.addEventListener("change", syncCanal);
   sub.addEventListener("change", syncCanal);
   syncCanal();
 
   wireForm(sub, "Subscrição registada. Obrigado.", function (f) {
-    if (canal.value === "sms") {
+    if (canalVal() === "sms") {
       var tel = f.telefone.value.trim();
       if (!/^(\+?258)?\s?8[2-7]\s?\d{3}\s?\d{4}$/.test(tel)) return "Indique um número móvel válido, por exemplo 84 123 4567.";
     } else if (!f.email.value || !f.email.checkValidity()) {
@@ -232,6 +231,35 @@
       });
     }, { threshold: 0.4 });
     stats.forEach(function (s) { io.observe(s); });
+  }
+
+  /* ---------- Submenu "Sobre" ---------- */
+  $$(".sub-toggle").forEach(function (b) {
+    var li = b.parentElement;
+    function close() { b.setAttribute("aria-expanded", "false"); li.classList.remove("is-open"); }
+    b.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var open = b.getAttribute("aria-expanded") === "true";
+      b.setAttribute("aria-expanded", String(!open));
+      li.classList.toggle("is-open", !open);
+    });
+    document.addEventListener("click", function (e) { if (!li.contains(e.target)) close(); });
+    li.addEventListener("keydown", function (e) { if (e.key === "Escape") { close(); b.focus(); } });
+  });
+
+  /* ---------- Cartazes ampliados ---------- */
+  var lb = $("#lightbox");
+  if (lb && lb.showModal) {
+    var lbImg = $("img", lb);
+    $$(".news__img").forEach(function (b) {
+      b.addEventListener("click", function () {
+        lbImg.src = b.dataset.full;
+        lbImg.alt = b.querySelector("img").alt;
+        lb.showModal();
+      });
+    });
+    $(".lightbox__close", lb).addEventListener("click", function () { lb.close(); });
+    lb.addEventListener("click", function (e) { if (e.target === lb) lb.close(); });
   }
 
   $("#year").textContent = new Date().getFullYear();

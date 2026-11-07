@@ -1,7 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Acredita Emprega">
-  <rect width="64" height="64" rx="14" fill="#00733f"/>
-  <path d="M0 50 64 30v34H0z" fill="#004d2a"/>
-  <circle cx="32" cy="22" r="9" fill="#fcd116"/>
-  <path d="M14 50c3-10 10-16 18-16s15 6 18 16" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
-  <path d="M40 15l6-6m0 0h-5m5 0v5" fill="none" stroke="#d21034" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#fff"/>
+  <path d="M12 10h30a10 10 0 0 1 10 10v4H22v6H12z" fill="#14b088"/>
+  <path d="M12 34h40v10a10 10 0 0 1-10 10H12z" fill="#ef4800"/>
+  <path d="M22 30h22v4H22z" fill="#ffb100"/>
 </svg>
